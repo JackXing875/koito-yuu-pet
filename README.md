@@ -1,35 +1,37 @@
-# Koito Yuu Pet · 小糸侑桌宠
+# Koito Yuu Pet
 
-以《终将成为你》（Bloom Into You）中的小糸侑为灵感制作的非官方同人动画素材。桃色双马尾、棕金色眼睛，神态轻松开心；为小尺寸显示保留清晰的轮廓和表情。
+**English** | [简体中文](README.zh-CN.md)
 
-![挥手](previews/waving.gif)
-![跳跃](previews/idle-jump-idle.gif)
-![环顾](previews/look-around.gif)
+Unofficial fan-made animation assets inspired by Yuu Koito from *Bloom Into You* (终将成为你 / やがて君になる). The character has peach-colored twin tails, golden-brown eyes, and a relaxed, cheerful expression, with clear silhouettes and readable expressions at small sizes.
 
-## 包含什么
+![Waving](previews/waving.gif)
+![Jumping](previews/idle-jump-idle.gif)
+![Looking around](previews/look-around.gif)
 
-- 透明背景精灵图：`assets/spritesheet.png`
-- 9 种动画状态：待机、向右跑、向左跑、挥手、跳跃、失败、等待、工作中、检查
-- 16 个视线方向；共 73 个有效画格
-- 可阅读的布局描述 `layout.json` 和 GIF 预览
+## What's included
 
-图片由 AI 辅助生成，再经逐帧调整、对齐、透明背景处理与动画检查。没有将漫画页面、动画截图或官方立绘直接打包分发。
+- A transparent sprite sheet: `assets/spritesheet.png`
+- 9 animation states: idle, running right, running left, waving, jumping, failed, waiting, working, and review
+- 16 gaze directions; 73 active frames in total
+- A human-readable layout description in `layout.json` and animated GIF previews
 
-## 使用方式与兼容性
+The artwork was created with AI assistance, followed by frame-by-frame adjustments, alignment, transparency processing, and animation checks. No manga pages, anime screenshots, or official character illustrations are directly bundled or redistributed.
 
-本仓库公开的是动画素材，**不包含独立的桌面程序、安装器或账户配置**。下载仓库 ZIP 后，可在支持自定义精灵图的工具中按下述布局接入。
+## Usage and compatibility
 
-这份精灵图已用于 ChatGPT Work 的 v2 宠物格式。各客户端的导入入口和本地桌宠格式可能不同；仓库暂不提供经过验证的通用一键安装命令。`layout.json` 是本仓库的说明性布局文件，不是客户端要求的 `pet.json`，不要将二者互换。也不要直接将整张 11 行图当成旧版 9 行图使用。
+This repository provides animation assets. **It does not include a standalone desktop application, an installer, or account configuration.** Download the repository as a ZIP, then use the layout below to integrate the assets into a tool that supports custom sprite sheets.
 
-### 精灵图布局
+This sprite sheet has been used with the ChatGPT Work v2 pet format. Import options and local desktop-pet formats may vary between clients; this repository does not currently provide a verified, universal one-command installation method. `layout.json` documents this repository's layout and is not the client-required `pet.json`; the two are not interchangeable. Do not use the full 11-row sheet as a legacy 9-row sheet.
 
-- 整图：1536 × 2288 像素，RGBA PNG
-- 网格：8 列 × 11 行
-- 单格：192 × 208 像素
-- 索引从 0 开始；左上角为原点
-- 画格位置：`x = column × 192`，`y = row × 208`
+### Sprite sheet layout
 
-| 行 | 状态 | 有效格数 |
+- Image: 1536 × 2288 pixels, RGBA PNG
+- Grid: 8 columns × 11 rows
+- Cell: 192 × 208 pixels
+- Indices are zero-based, with the origin at the top-left corner
+- Frame position: `x = column × 192`, `y = row × 208`
+
+| Row | State | Active frames |
 | --- | --- | --- |
 | 0 | idle | 6 |
 | 1 | running-right | 8 |
@@ -40,15 +42,15 @@
 | 6 | waiting | 6 |
 | 7 | running | 6 |
 | 8 | review | 6 |
-| 9 | 前 8 个视线方向 | 8 |
-| 10 | 后 8 个视线方向 | 8 |
+| 9 | First 8 gaze directions | 8 |
+| 10 | Remaining 8 gaze directions | 8 |
 
-每行从第 0 列开始取有效画格，其余格子留空。预览播放时长记录在 `layout.json` 中，仅作演示参考；接入其他播放器时可自行调整时序。
+Active frames start at column 0 in each row; unused cells are blank. Preview frame durations are recorded in `layout.json` as demonstration timings. Adjust them as needed when integrating the assets into another player.
 
-## 角色归属与使用说明
+## Character rights and licensing
 
-小糸侑及《终将成为你》的原作角色和相关权利属于仲谷鳰及相关权利人。本项目是非官方同人创作，与原作者、出版方、动画制作方或 OpenAI 均无官方合作或背书关系。
+Yuu Koito, the original characters from *Bloom Into You*, and the associated rights belong to Nio Nakatani and their respective rights holders. This is an unofficial fan project and is not affiliated with or endorsed by the original creator, publishers, animation studios, or OpenAI.
 
-本仓库的原创说明文档采用 [MIT 许可](LICENSE)。**该许可不覆盖角色形象、精灵图、GIF 及其他美术素材，也不授予任何第三方角色知识产权。** 美术素材公开供查看与研究；进一步使用、改编、传播或商业利用前，请自行确认所需权利。公开可下载不等于取得原作授权。
+The original documentation in this repository is available under the [MIT License](LICENSE). **That license does not cover the character likeness, sprite sheet, GIFs, or other artwork, and does not grant any third-party character intellectual property rights.** The artwork is publicly available for viewing and study. Before further use, adaptation, redistribution, or commercial use, confirm that you have the necessary rights. Public availability does not constitute authorization from the original rights holders.
 
-原作动画官网：https://yagakimi.com/
+Official anime website: https://yagakimi.com/
