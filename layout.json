@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "description": "Repository asset layout; not an application import manifest. All indices are zero-based. Preview timing is illustrative, not a host playback requirement.",
+  "image": "assets/spritesheet.png",
+  "sprite_version": 2,
+  "width": 1536,
+  "height": 2288,
+  "pixel_format": "RGBA",
+  "cell_width": 192,
+  "cell_height": 208,
+  "columns": 8,
+  "rows": 11,
+  "used_frames": 73,
+  "coordinate_origin": "top-left",
+  "frame_rect_formula": {
+    "x": "column * 192",
+    "y": "row * 208",
+    "width": 192,
+    "height": 208
+  },
+  "states": [
+    {
+      "name": "idle",
+      "row": 0,
+      "frame_count": 6,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "preview_frame_durations_ms": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ]
+    },
+    {
+      "name": "running-right",
+      "row": 1,
+      "frame_count": 8,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "preview_frame_durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ]
+    },
+    {
+      "name": "running-left",
+      "row": 2,
+      "frame_count": 8,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "preview_frame_durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ]
+    },
+    {
+      "name": "waving",
+      "row": 3,
+      "frame_count": 4,
+      "columns": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "preview_frame_durations_ms": [
+        140,
+        140,
+        140,
+        280
+      ]
+    },
+    {
+      "name": "jumping",
+      "row": 4,
+      "frame_count": 5,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "preview_frame_durations_ms": [
+        140,
+        140,
+        140,
+        140,
+        280
+      ]
+    },
+    {
+      "name": "failed",
+      "row": 5,
+      "frame_count": 8,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "preview_frame_durations_ms": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        240
+      ]
+    },
+    {
+      "name": "waiting",
+      "row": 6,
+      "frame_count": 6,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "preview_frame_durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        260
+      ]
+    },
+    {
+      "name": "running",
+      "row": 7,
+      "frame_count": 6,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "preview_frame_durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ]
+    },
+    {
+      "name": "review",
+      "row": 8,
+      "frame_count": 6,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "preview_frame_durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        280
+      ]
+    },
+    {
+      "name": "look-000-to-157.5",
+      "row": 9,
+      "frame_count": 8,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "look-180-to-337.5",
+      "row": 10,
+      "frame_count": 8,
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ]
+}
